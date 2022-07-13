@@ -13,7 +13,6 @@ function myFunction() {
   }
 }
 
-
 let webUser = document.getElementById('username');
 let WebPass = document.getElementById('password');
 let submit = document.getElementById('submit');
@@ -38,4 +37,19 @@ if (window.localStorage) {
   });
 } else {
   console.log('Local Storage is not supported');
+}
+
+// GEOLOCATION API
+function userPosition() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (position) {
+      let lat = position.coords.latitude;
+      let lon = position.coords.longitude;
+
+      let userLocation = 'Position is (' + 'Latitude: ' + lat + ', ' + 'Longitude: ' + lon +')';
+      document.getElementById('location').innerHTML = userLocation;
+    });
+  } else {
+    alert('Sorry, your browser does not support HTML5 geolocation.');
+  }
 }

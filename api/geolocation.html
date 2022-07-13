@@ -37,9 +37,66 @@
     </div>
 
 
+    <div id="location"></div>
+    <div id="map">
+        <button class="geo-class" type="button" onclick="userPosition();">Show Position</button>
+    </div>
+
+    <section class="tutorial">
+        <h1>GeoLocation Tutorial</h1>
+        <p>
+            <strong>GeoLocation</strong> is a web API that allows you to get the location of the user.
+        </p>
+        <p>
+            User will be prompted to allow the browser to access their location. If the user allows, the browser will
+            get the location of the user. If the user does not allow, the browser will not get the location of the user.
+        </p>
+        <p> <strong>Geolocation</strong> is a read-only property of the <strong>navigator</strong> object. </p>
+        </p>
+        <p>There are multiple ways to access this location information: </p>
+        <p>
+            But we will use here <code>Geolocation.getCurrentPosition(): </code> which retrives the user's current
+            position.
+        </p>
+        <p>
+            We need one callback function to handle the response. The callback function will be called when the response
+            is a success. The callback function will have two arguments:
+
+            <ul>
+                <li>
+                    <code>position</code> - This is the object that contains the location information.
+                </li>
+                <li>
+                    <code>status</code> - This is the status of the response.
+                </li>
+            </ul>
+
+        </p>
+
+        <p>
+            geolocation properties has the following properties:
+
+            <ul>
+                <li>
+                    <code>coords</code> - This is the object that contains the location information.
+                </li>
+                <li>
+                    <code>timestamp</code> - This is the time at which the position was determined.
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            We use these properties to get the location information.
+        </p>
+
+
+    </section>
+
+
     <script src="./script.js"></script>
 
 
-</body>
+    </>
 
 </html>
