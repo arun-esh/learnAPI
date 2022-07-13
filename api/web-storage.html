@@ -51,8 +51,52 @@
             <p id="hint"></p>
         </div>
     </div>
+
+    <hr>
+
+    <section class="tutorial">
+        <h1>Web Storage Tutorial</h1>
+        <p>
+            <strong>Web Storage</strong> is a web API that allows to store key/value pairs in the browser.
+        </p>
+
+        <p>
+            It is used to store data that is not visible to the user, such as user login credentials,
+            shopping cart contents, and other data that is not meant to be visible to the user.
+        </p>
+
+        <p>
+            We could also use cookies to store data that is not meant to be visible to the user. But localStorage is
+            better for this purpose.
+        </p>
+        <p>
+            If user has disabled third party cookies, then it wont work. In that case, --> <code>localStorage</code> will  work.
+        </p>
+        <p>
+            <strong>localStorage</strong> is a property of the <strong>window</strong> object.
+            <br>
+            <strong>localStorage</strong> is a collection of key/value pairs.
+            <br>
+            Save the data in the browser using <code>localStorage.setItem</code> method.
+            <br>
+            Retrieve the data from the browser using <code>localStorage.getItem</code> method.
+            <br>
+            Remove the data from the browser using <code>localStorage.removeItem</code> method.
+            <br>
+            Clear the data from the browser using <code>localStorage.clear</code> method.
+            
+
+        </p>
+    </section>
+
+
+
+
     
 
+    <footer>
+        <p>Made with ❤️ in 🇨🇦</p>
+    </footer>
 
     <script src="./script.js"></script>
 
