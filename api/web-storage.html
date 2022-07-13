@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" />
+    <title>Web Storage</title>
+</head>
+
+<body>
+    <nav>
+        <div class="header-section">
+            <div class="header-container">
+                <div class="topnav" id="myTopnav">
+                    <a href="web-storage.html">Web Storage API</a>
+                    <a href="web-speech.html">Web Speech API</a>
+                    <a href="geolocation.html">GeoLocation API</a>
+                    <a href="google-map.html">Google Map API</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <h1 id="page-heading">Click on the menu item</h1>
+    </div>
+
+
+    <div class="web-storage">
+        <div class="my-form">
+            <div class="username">
+                <input type="text" id="username" placeholder="username" />
+            </div>
+
+            <div class="password">
+                <input type="password" id="password" placeholder="password" />
+            </div>
+            <div class="submit">
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+            <p id="display"></p>
+            <p id="hint"></p>
+        </div>
+    </div>
+    
+
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
